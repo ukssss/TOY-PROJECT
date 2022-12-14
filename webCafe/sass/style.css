@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -73,7 +72,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -359,16 +359,76 @@ ol {
   list-style: none;
 }
 
-/* 헤더 */
+/* Header */
 .header {
-  background-color: pink;
+  padding: 0 30px;
+  background-color: salmon;
+  position: relative;
 }
 .header-side {
-  background-color: yellow;
+  height: 40px;
 }
 .header-side__lists {
+  height: 100%;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-side__lists-list {
+  margin-left: 10px;
+}
+.header-side__lists-list:first-child .divider {
+  display: none;
+}
+.header-side__lists-list .divider {
+  margin-right: 10px;
+}
+.header-main {
+  background-color: grey;
+}
+.header-main__logo {
+  background-color: aquamarine;
+  position: absolute;
+  z-index: 10;
+}
+.header-main__lists {
+  background-color: tomato;
+  position: absolute;
+  top: 0;
+  left: 20%;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Hidden Contents */
+.a11y-hidden,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 0 0, 0 0);
+          clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/* Default Style */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Layout */
+.header,
+.visual,
+.main,
+.slogan,
+.footer-inner {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.body {
+  color: #212121;
+  font-size: 1.4rem;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}/*# sourceMappingURL=style.css.map */

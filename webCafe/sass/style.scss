@@ -7,3 +7,29 @@
 @import "./layout/main";
 @import "./layout/slogan";
 @import "./layout/footer";
+
+@import "./components/hidden";
+
+/* Default Style */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Layout */
+.header,
+.visual,
+.main,
+.slogan,
+.footer-inner {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.body {
+  color: #212121;
+  font-size: 1.4rem;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}

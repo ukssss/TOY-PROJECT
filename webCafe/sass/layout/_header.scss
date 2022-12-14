@@ -1,13 +1,47 @@
-/* 헤더 */
+/* Header */
 .header {
-  background-color: pink;
+  padding: 0 30px;
+  background-color: salmon;
+  position: relative;
 
   &-side {
-    background-color: yellow;
+    height: 40px;
 
     &__lists {
+      height: 100%;
       display: flex;
       flex-flow: row nowrap;
+      justify-content: flex-end;
+      align-items: center;
+
+      &-list {
+        margin-left: 10px;
+
+        &:first-child .divider {
+          display: none;
+        }
+
+        .divider {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  &-main {
+    background-color: grey;
+
+    &__logo {
+      background-color: aquamarine;
+      position: absolute;
+      z-index: 10;
+    }
+
+    &__lists {
+      background-color: tomato;
+      position: absolute;
+      top: 0;
+      left: 20%;
     }
   }
 }
