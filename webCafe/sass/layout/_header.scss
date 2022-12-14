@@ -1,0 +1,13 @@
+/* 헤더 */
+.header {
+  background-color: pink;
+
+  &-side {
+    background-color: yellow;
+
+    &__lists {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+  }
+}
