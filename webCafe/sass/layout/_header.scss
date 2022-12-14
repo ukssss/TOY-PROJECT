@@ -1,47 +1,55 @@
 /* Header */
 .header {
-  padding: 0 30px;
-  background-color: salmon;
+  padding: 0 30px 30px 30px;
   position: relative;
+  background-color: salmon;
+  border-radius: 0 0 15px 15px;
+
+  &-logo {
+    background-color: bisque;
+    position: absolute;
+    top: 45px;
+    left: 70px;
+    z-index: 10;
+  }
 
   &-side {
-    height: 40px;
+    text-align: right;
+    padding: 10px 0;
 
-    &__lists {
-      height: 100%;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: flex-end;
-      align-items: center;
+    &__list {
+      display: inline-block;
+      margin-left: 10px;
 
-      &-list {
-        margin-left: 10px;
-
-        &:first-child .divider {
-          display: none;
-        }
-
-        .divider {
-          margin-right: 10px;
-        }
+      .divider {
+        margin-right: 10px;
       }
     }
   }
 
-  &-main {
-    background-color: grey;
+  &-nav {
+    border-top: 1px solid #000;
+    background-color: yellow;
 
-    &__logo {
-      background-color: aquamarine;
-      position: absolute;
-      z-index: 10;
-    }
+    &-menu {
+      height: 47px;
+      padding-left: 230px;
 
-    &__lists {
-      background-color: tomato;
-      position: absolute;
-      top: 0;
-      left: 20%;
+      &__list {
+        float: left;
+        border-left: 2px solid #fff;
+
+        .menu {
+          &-button {
+            display: block;
+            padding: 5px 20px;
+          }
+
+          &-side {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
