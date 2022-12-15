@@ -18,6 +18,25 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
+/* Link Style */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Body Style */
+body {
+  color: #212121;
+  font-size: 1.4rem;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background: url("../images/bg_flower.png") no-repeat 50% 0, #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%) repeat 0 0;
+}
+
 /* Layout */
 .header,
 .visual,
@@ -26,11 +45,4 @@
 .footer-inner {
   width: 940px;
   margin: 0 auto;
-}
-
-body {
-  color: #212121;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
-    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  background: url("../images/bg_flower.png") no-repeat 50% 0, #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%) no-repeat 0 0;
 }

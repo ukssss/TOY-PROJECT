@@ -1,0 +1,17 @@
+/* Visual */
+.visual {
+  height: 120px;
+  position: relative;
+  background-color: salmon;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: fadeEffect 2000ms infinite alternate;
+  }
+}
