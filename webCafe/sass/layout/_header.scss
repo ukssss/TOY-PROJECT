@@ -2,14 +2,14 @@
 .header {
   padding: 0 30px 30px 30px;
   position: relative;
-  background-color: salmon;
+  background-color: #fff;
   border-radius: 0 0 15px 15px;
 
   &-logo {
-    background-color: bisque;
     position: absolute;
-    top: 45px;
-    left: 70px;
+    top: 40px;
+    left: 62px;
+    margin-top: 8px;
     z-index: 10;
   }
 
@@ -26,30 +26,113 @@
       }
     }
   }
+}
 
-  &-nav {
-    border-top: 1px solid #000;
-    background-color: yellow;
+.nav {
+  padding-bottom: 40px;
 
-    &-menu {
-      height: 47px;
-      padding-left: 230px;
+  &-menu {
+    border-top: 2px solid currentColor;
+    background: #e85e2c linear-gradient(to bottom, #ef9126 0%, #e85e2c 35%, #e85e2c 70%, #ef9126 100%);
+    border-radius: 0 0 5px 5px;
+    padding-left: 230px;
+    height: 47px;
+    position: relative;
 
-      &__list {
-        float: left;
-        border-left: 2px solid #fff;
+    li:nth-child(-n + 3) {
+      position: relative;
+    }
 
-        .menu {
-          &-button {
-            display: block;
-            padding: 5px 20px;
-          }
+    &__list {
+      float: left;
+      border-left: 2px solid #fff;
+    }
+  }
+}
 
-          &-side {
-            display: none;
-          }
+.menu {
+  &-button {
+    border: 0;
+    background: transparent;
+    padding: 0 23px;
+    line-height: 45px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+  }
+
+  &-sub {
+    position: absolute;
+    top: 47px;
+    display: none;
+    padding: 4px 0;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: inline-block;
+      padding: 6px 0;
+
+      &:hover,
+      &:focus {
+        color: #f00;
+
+        &::before {
+          content: "\e801";
         }
       }
+
+      &::before {
+        content: "\e805";
+        font-family: "fontello";
+        font-weight: normal;
+        display: inline-block;
+        text-decoration: inherit;
+        width: 1em;
+        margin-right: 0.2em;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1em;
+        margin-left: 0.2em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
     }
+  }
+}
+
+/* is-active */
+.is-active {
+  .menu-sub {
+    position: absolute;
+    display: inline-block;
+    background-color: bisque;
+    white-space: nowrap;
+  }
+
+  .menu-button {
+    color: #ff0;
+
+    &::after {
+      content: "";
+      display: block;
+      border-top: 3px solid #000;
+    }
+  }
+
+  .menu-html,
+  .menu-css,
+  .menu-standard {
+    left: 0;
+  }
+
+  .menu-accessibility,
+  .menu-qna,
+  .menu-archive {
+    right: 0;
   }
 }
