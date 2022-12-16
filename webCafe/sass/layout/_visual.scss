@@ -2,7 +2,6 @@
 .visual {
   height: 120px;
   position: relative;
-  background-color: salmon;
 
   &::before,
   &::after {
@@ -13,5 +12,14 @@
     top: 0;
     left: 0;
     animation: fadeEffect 2000ms infinite alternate;
+  }
+
+  &::before {
+    background: url("../../images/ani_flower_01.png") no-repeat 0 -10px, url("../../images/ani_flower_02.png") no-repeat 600px 0;
+  }
+
+  &::after {
+    background: url("../../images/ani_flower_03.png") no-repeat 300px 0, url("../../images/ani_flower_04.png") no-repeat 800px 0;
+    animation-delay: 1000ms;
   }
 }

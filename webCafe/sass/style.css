@@ -586,7 +586,6 @@ ol {
 .visual {
   height: 120px;
   position: relative;
-  background-color: salmon;
 }
 .visual::before, .visual::after {
   content: "";
@@ -597,6 +596,68 @@ ol {
   left: 0;
   -webkit-animation: fadeEffect 2000ms infinite alternate;
           animation: fadeEffect 2000ms infinite alternate;
+}
+.visual::before {
+  background: url("../../images/ani_flower_01.png") no-repeat 0 -10px, url("../../images/ani_flower_02.png") no-repeat 600px 0;
+}
+.visual::after {
+  background: url("../../images/ani_flower_03.png") no-repeat 300px 0, url("../../images/ani_flower_04.png") no-repeat 800px 0;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.main {
+  display: flow-root;
+  background: #fff;
+  min-height: 450px;
+  padding: 30px 15px;
+  border-radius: 15px 15px 0 0;
+}
+
+.group {
+  margin: 0 15px;
+  float: left;
+}
+.group .group1 {
+  width: 250px;
+}
+.group .group2 {
+  width: 385px;
+  background-color: yellowgreen;
+}
+.group .group3 {
+  width: 192px;
+  background-color: skyblue;
+}
+
+.login {
+  box-shadow: 5px 5px 0 0 #ccc;
+  background: orange radial-gradient(circle at right top, orange, orangered);
+  padding: 10px;
+  border-radius: 5px;
+}
+.login .login-title {
+  font-size: 1.5rem;
+  color: yellow;
+  font-weight: 700;
+  text-indent: 10px;
+}
+.login .login-form {
+  margin-top: 10px;
+  background-color: #fff;
+}
+.login .login-form fieldset {
+  position: relative;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.sign {
+  background-color: #fff;
+  padding: 4px 10px;
+}
+.sign li {
+  display: inline-block;
 }
 
 /* Hidden Contents */
