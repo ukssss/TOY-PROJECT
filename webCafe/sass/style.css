@@ -948,6 +948,46 @@ ol {
 }
 
 /* group3 */
+/* Event */
+.event {
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+.event-title {
+  display: inline-block;
+}
+.event-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 18px;
+  overflow: hidden;
+  gap: 5px;
+}
+.event-button {
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 18px 0 0 0;
+  background: #ccc url("../../images/back_forward.png") no-repeat;
+}
+.event-button__next {
+  background-position: -36px 0;
+}
+.event-thumbnail, .event-brief {
+  margin: 10px 0;
+}
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+.event-brief {
+  line-height: 1.5;
+}
+
 /* Hidden Contents */
 .a11y-hidden,
 legend {
