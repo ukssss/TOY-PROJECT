@@ -1,0 +1,23 @@
+/* Validation */
+.validation-list {
+  margin-top: 25px;
+
+  li {
+    margin-top: 10px;
+
+    a {
+      background: url("../../images/validation_icon.png") no-repeat 40px 50%, #ccc linear-gradient(to bottom, #ccc, #eee);
+      display: block;
+      padding: 0 20px 0 70px;
+      border-radius: 30px;
+      line-height: 30px;
+      border: 1px solid #aaa;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        color: #f00;
+      }
+    }
+  }
+}

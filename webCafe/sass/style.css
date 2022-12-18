@@ -474,7 +474,7 @@ ol {
 }
 .header-logo {
   position: absolute;
-  top: 40px;
+  top: 37px;
   left: 62px;
   margin-top: 8px;
   z-index: 10;
@@ -560,7 +560,6 @@ ol {
 .is-active .menu-sub {
   position: absolute;
   display: inline-block;
-  background-color: bisque;
   white-space: nowrap;
 }
 .is-active .menu-button {
@@ -713,6 +712,26 @@ ol {
 }
 .sign a::before {
   color: orangered;
+}
+
+/* Validation */
+.validation-list {
+  margin-top: 25px;
+}
+.validation-list li {
+  margin-top: 10px;
+}
+.validation-list li a {
+  background: url("../../images/validation_icon.png") no-repeat 40px 50%, #ccc linear-gradient(to bottom, #ccc, #eee);
+  display: block;
+  padding: 0 20px 0 70px;
+  border-radius: 30px;
+  line-height: 30px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+.validation-list li a:hover, .validation-list li a:focus {
+  color: #f00;
 }
 
 /* Hidden Contents */
