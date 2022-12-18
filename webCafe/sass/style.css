@@ -837,8 +837,34 @@ ol {
 
 /* Board */
 .board {
-  background-color: yellowgreen;
   margin-top: 20px;
+  position: relative;
+}
+.board-list li {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.board-list li a {
+  flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.board-list li time {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+.board-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+
+.icon-plus::before {
+  color: hsl(110deg, 50%, 30%);
 }
 
 .tab-list {
@@ -856,6 +882,13 @@ ol {
   background-color: #fff;
   color: #e85e2c;
   border-color: currentColor currentColor #fff currentColor;
+}
+.tab-panel {
+  display: none;
+  margin-top: 15px;
+}
+.tab-panel.is-select {
+  display: block;
 }
 
 /* group3 */
