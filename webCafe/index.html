@@ -132,7 +132,21 @@
           </dl>
         </section>
       </div>
-      <div class="group group2"></div>
+      <div class="group group2">
+        <h2 class="a11y-hidden">검색</h2>
+        <form method="POST" action="https://formspree.io/f/mdojqlwa" class="search">
+          <fieldset>
+            <legend>검색 폼</legend>
+            <div class="search-inner">
+              <div class="search-input">
+                <label for="search-input" class="search-input__label"> <span class="icon-search" aria-hidden="true"></span>자료검색 </label>
+                <input type="search" id="search-input" class="search-input__input" placeholder="검색어를 입력하세요 예)HTML5" required />
+              </div>
+              <button type="submit" class="search-button">검색</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
       <div class="group group3"></div>
     </main>
     <article class="slogan"></article>
