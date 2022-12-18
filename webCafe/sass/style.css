@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/* Variables */
+.text-xl {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -624,16 +630,15 @@ ol {
   margin: 0 15px;
   float: left;
 }
-.group .group1 {
+.group1 {
   width: 250px;
 }
-.group .group2 {
-  width: 385px;
-  background-color: yellowgreen;
+.group2 {
+  width: 380px;
+  height: 300px;
 }
-.group .group3 {
-  width: 192px;
-  background-color: skyblue;
+.group3 {
+  width: 190px;
 }
 
 /* group1 */
@@ -734,6 +739,49 @@ ol {
   color: #f00;
 }
 
+/* Term */
+.term {
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+.term-list {
+  margin-top: 10px;
+}
+.term-list div {
+  margin-top: 10px;
+  display: flow-root;
+}
+.term-list__subject, .term-list__brief {
+  float: right;
+  width: 145px;
+}
+.term-list__subject {
+  color: #296897;
+  font-weight: 500;
+}
+.term-list__thumbnail {
+  float: left;
+}
+.term-list__thumbnail img {
+  vertical-align: middle;
+}
+.term-list__brief {
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+.cross .term-list__subject, .cross .term-list__brief {
+  float: left;
+}
+.cross .term-list__thumbnail {
+  float: right;
+}
+
+/* group2 */
+/* group3 */
 /* Hidden Contents */
 .a11y-hidden,
 legend {

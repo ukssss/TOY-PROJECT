@@ -1,0 +1,54 @@
+/* Term */
+.term {
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+
+  &-list {
+    margin-top: 10px;
+
+    div {
+      margin-top: 10px;
+      display: flow-root;
+    }
+
+    &__subject,
+    &__brief {
+      float: right;
+      width: 145px;
+    }
+
+    &__subject {
+      color: #296897;
+      font-weight: 500;
+    }
+
+    &__thumbnail {
+      float: left;
+
+      img {
+        vertical-align: middle;
+      }
+    }
+
+    &__brief {
+      margin-top: 5px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.cross {
+  .term-list {
+    &__subject,
+    &__brief {
+      float: left;
+    }
+
+    &__thumbnail {
+      float: right;
+    }
+  }
+}

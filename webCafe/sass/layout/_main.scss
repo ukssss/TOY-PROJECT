@@ -10,21 +10,25 @@
   margin: 0 15px;
   float: left;
 
-  .group1 {
+  &1 {
     width: 250px;
   }
 
-  .group2 {
-    width: 385px;
-    background-color: yellowgreen;
+  &2 {
+    width: 380px;
+    height: 300px;
   }
 
-  .group3 {
-    width: 192px;
-    background-color: skyblue;
+  &3 {
+    width: 190px;
   }
 }
 
 /* group1 */
 @import "../components/login";
 @import "../components/validation";
+@import "../components/term";
+
+/* group2 */
+
+/* group3 */
