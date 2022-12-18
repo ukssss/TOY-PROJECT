@@ -381,7 +381,7 @@ ol {
   list-style: none;
 }
 
-/* 비주얼 */
+/* Visual */
 @-webkit-keyframes moveEffect {
   0% {
     font-size: 12px;
@@ -986,6 +986,36 @@ ol {
 }
 .event-brief {
   line-height: 1.5;
+}
+
+/* Related */
+.related {
+  margin-top: 10px;
+}
+.related-list {
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 400ms 0ms ease-in-out, padding 400ms 0ms ease-in-out;
+  padding: 0;
+}
+.related-list:hover, .related-list:focus {
+  height: 147px;
+  padding: 10px;
+}
+.related-list li {
+  height: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 5px;
+}
+.related-list a {
+  flex-grow: 1;
+  padding: 2px 10px 0 10px;
 }
 
 /* Hidden Contents */
