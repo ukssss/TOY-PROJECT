@@ -22,4 +22,11 @@
     background: url("../../images/ani_flower_03.png") no-repeat 300px 0, url("../../images/ani_flower_04.png") no-repeat 800px 0;
     animation-delay: 1000ms;
   }
+
+  &-text {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    animation: moveEffect 400ms ease-in-out forwards;
+    position: relative;
+    z-index: 1;
+  }
 }

@@ -605,6 +605,13 @@ ol {
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
 }
+.visual-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  -webkit-animation: moveEffect 400ms ease-in-out forwards;
+          animation: moveEffect 400ms ease-in-out forwards;
+  position: relative;
+  z-index: 1;
+}
 
 .main {
   display: flow-root;
@@ -630,6 +637,7 @@ ol {
   background-color: skyblue;
 }
 
+/* group1 */
 /* Login */
 .login {
   box-shadow: 5px 5px 0 0 #ccc;
