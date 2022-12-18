@@ -25,36 +25,4 @@
   }
 }
 
-.login {
-  box-shadow: 5px 5px 0 0 #ccc;
-  background: orange radial-gradient(circle at right top, orange, orangered);
-  padding: 10px;
-  border-radius: 5px;
-
-  .login-title {
-    font-size: 1.5rem;
-    color: yellow;
-    font-weight: 700;
-    text-indent: 10px;
-  }
-
-  .login-form {
-    margin-top: 10px;
-    background-color: #fff;
-
-    fieldset {
-      position: relative;
-      border: 0;
-      border-bottom: 1px solid #ccc;
-    }
-  }
-}
-
-.sign {
-  background-color: #fff;
-  padding: 4px 10px;
-
-  li {
-    display: inline-block;
-  }
-}
+@import "../components/login";

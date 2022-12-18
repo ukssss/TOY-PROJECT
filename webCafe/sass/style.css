@@ -630,6 +630,7 @@ ol {
   background-color: skyblue;
 }
 
+/* Login */
 .login {
   box-shadow: 5px 5px 0 0 #ccc;
   background: orange radial-gradient(circle at right top, orange, orangered);
@@ -638,26 +639,72 @@ ol {
 }
 .login .login-title {
   font-size: 1.5rem;
-  color: yellow;
+  color: #ff0;
   font-weight: 700;
   text-indent: 10px;
+  padding-top: 2px;
 }
 .login .login-form {
-  margin-top: 10px;
   background-color: #fff;
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+  border-radius: 5px 5px 0 0;
 }
 .login .login-form fieldset {
   position: relative;
   border: 0;
-  border-bottom: 1px solid #ccc;
+  padding: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaa;
+}
+.login .login-form fieldset .user-email,
+.login .login-form fieldset .user-password {
+  margin-bottom: 5px;
+}
+.login .login-form fieldset .user-email label,
+.login .login-form fieldset .user-password label {
+  display: inline-block;
+  width: 4em;
+}
+.login .login-form fieldset .user-email input,
+.login .login-form fieldset .user-password input {
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  border-radius: 3px;
+}
+.login .login-form fieldset .login-button {
+  background-color: orangered;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 53px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 13px;
 }
 
 .sign {
   background-color: #fff;
   padding: 4px 10px;
+  border-radius: 0 0 5px 5px;
 }
 .sign li {
   display: inline-block;
+}
+.sign li:first-child {
+  margin-right: 16px;
+}
+.sign a {
+  display: inline-block;
+  padding: 6px 0;
+  letter-spacing: -1px;
+}
+.sign a::before {
+  color: orangered;
 }
 
 /* Hidden Contents */
