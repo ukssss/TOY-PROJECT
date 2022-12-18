@@ -1,0 +1,24 @@
+/* Board */
+.board {
+  background-color: yellowgreen;
+  margin-top: 20px;
+}
+
+.tab-list {
+  display: flex;
+  flex-flow: row nowrap;
+
+  &__btn {
+    border: 1px solid #aaa;
+    background-color: #ccc;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 10px;
+    color: #666;
+  }
+
+  .is-select {
+    background-color: #fff;
+    color: #e85e2c;
+    border-color: currentColor currentColor #fff currentColor;
+  }
+}
