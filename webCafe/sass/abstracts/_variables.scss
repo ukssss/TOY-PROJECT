@@ -21,4 +21,21 @@
 }
 
 .margin {
+  &-top {
+    &__default {
+      margin-top: 20px;
+    }
+
+    &__thin {
+      margin-top: 5px;
+    }
+
+    &__normal {
+      margin-top: 10px;
+    }
+
+    &__large {
+      margin-top: 15px;
+    }
+  }
 }

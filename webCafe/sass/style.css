@@ -20,6 +20,19 @@
   font-weight: 700;
 }
 
+.margin-top__default {
+  margin-top: 20px;
+}
+.margin-top__thin {
+  margin-top: 5px;
+}
+.margin-top__normal {
+  margin-top: 10px;
+}
+.margin-top__large {
+  margin-top: 15px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1016,6 +1029,54 @@ ol {
 .related-list a {
   flex-grow: 1;
   padding: 2px 10px 0 10px;
+}
+
+/* Favorite */
+.favorite {
+  position: relative;
+}
+.favorite li {
+  margin-top: 10px;
+  counter-increment: number;
+  position: relative;
+}
+.favorite li::before {
+  content: counter(number);
+  background-color: #aaa;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  display: inline-block;
+  width: 1.5em;
+  text-align: center;
+  line-height: 1.5;
+  margin-right: 10px;
+}
+.favorite li a {
+  position: absolute;
+  top: 1px;
+}
+.favorite li .up,
+.favorite li .stop,
+.favorite li .down {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 20px;
+  height: 11px;
+  background: url("../../images/rank.png") no-repeat 100% 0;
+}
+.favorite li .stop {
+  background-position: 100% 50%;
+}
+.favorite li .down {
+  background-position: 100% 100%;
+}
+.favorite-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
 }
 
 /* Hidden Contents */

@@ -1,0 +1,54 @@
+/* Favorite */
+.favorite {
+  position: relative;
+
+  li {
+    margin-top: 10px;
+    counter-increment: number;
+    position: relative;
+
+    &::before {
+      content: counter(number);
+      background-color: #aaa;
+      color: #fff;
+      font-size: 1.2rem;
+      border-radius: 3px;
+      display: inline-block;
+      width: 1.5em;
+      text-align: center;
+      line-height: 1.5;
+      margin-right: 10px;
+    }
+
+    a {
+      position: absolute;
+      top: 1px;
+    }
+
+    .up,
+    .stop,
+    .down {
+      position: absolute;
+      top: 20%;
+      right: 0;
+      width: 20px;
+      height: 11px;
+      background: url("../../images/rank.png") no-repeat 100% 0;
+    }
+
+    .stop {
+      background-position: 100% 50%;
+    }
+
+    .down {
+      background-position: 100% 100%;
+    }
+  }
+
+  &-more {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 8px;
+  }
+}
