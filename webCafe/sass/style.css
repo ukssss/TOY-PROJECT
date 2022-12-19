@@ -1115,6 +1115,50 @@ ol {
   content: "";
 }
 
+/* Footer */
+.footer {
+  background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+}
+.footer-inner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.footer-inner__wrapper {
+  flex: 1 1 auto;
+}
+.footer-inner__guide {
+  background-color: #7b8385;
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  text-transform: uppercase;
+  padding: 4px 45px;
+  justify-content: space-between;
+  border-radius: 30px;
+}
+.footer-inner__guide a {
+  display: block;
+  padding: 6px 10px;
+}
+.footer-logo {
+  width: 170px;
+  height: 40px;
+  padding-left: 22px;
+  padding-top: 40px;
+}
+.footer .address,
+.footer .copyright {
+  display: block;
+  font-style: normal;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+.footer .badge {
+  margin-left: 20px;
+}
+
 /* Hidden Contents */
 .a11y-hidden,
 legend {
