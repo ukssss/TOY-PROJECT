@@ -1079,6 +1079,42 @@ ol {
   padding: 8px;
 }
 
+/* Slogan */
+.slogan {
+  clear: both;
+  position: relative;
+  padding: 15px 100px 15px 180px;
+}
+.slogan-title {
+  position: absolute;
+  width: 110px;
+  height: 83px;
+  line-height: 83px;
+  text-align: center;
+  bottom: -25px;
+  left: 20px;
+}
+.slogan-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../images/coffee.png") no-repeat 0 0;
+}
+.slogan-content {
+  color: #a09784;
+}
+.slogan-content q::before {
+  display: inline-block;
+  font-size: 3rem;
+  transform: translateY(10px);
+}
+.slogan-content q::after {
+  content: "";
+}
+
 /* Hidden Contents */
 .a11y-hidden,
 legend {
